@@ -4,7 +4,8 @@ class UserController {
 
     async index(req, res) {
         const row = await UserRepository.findAll()
-        res.json(row)
+        res.render('dashboard', { users: row });        
+        r
     }
 
 

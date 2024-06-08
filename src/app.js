@@ -1,17 +1,23 @@
-import express from 'express'
+import express from 'express';
+import path from 'path';
+import routes from './routes.js';
 
-import routes from './routes.js'
-//Instância da importação
-const app=express()
+// Instância da importação
+const app = express();
 
-//permitido que o express leia os dados em json
-app.use(express.json())
-//usar routas 
-app.use(routes)
+// Permitido que o express leia os dados em JSON
+app.use(express.json());
 
+// Configurar o EJS como mecanismo de visualização
+app.set('view engine', 'ejs');
+app.set('views', path.join(path.resolve(), 'views/htmls'));
+
+// Usar rotas
+app.use(routes);
+
+// Rota para a página inicial
 app.get('/', (req, res) => {
-    res.sendFile('index.html', { root: 'views/htmls' });
-  });
+    res.sendFile('index.html', { root: path.join(path.resolve(), 'views/htmls') });
+});
 
-
-export default app
+export default app;

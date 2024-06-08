@@ -4,6 +4,7 @@ import User from './app/controller/UserController.js'
 const router = Router()
 
 // ROTAS
+
 router.get('/users', User.index)
 router.get('/selecoes/:id', User.show)
 router.post('/selecoes', User.store)
