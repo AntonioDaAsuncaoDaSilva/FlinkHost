@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flinkhost</title>
+  <link rel="stylesheet" href="/views/CSS/index.css">
+  <link rel="stylesheet" href="/views/CSS/bootstrap/bootstrap.min.css">
+  <link href="/views/CSS/bootstrap/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: white; /* Fundo branco geral */
+    }
+
+    .header {
+      background: linear-gradient(135deg, #2db8e2,  #2db8e2);
+      height: 80vh; /* Altura da seção */
+      justify-content: center;
+      z-index: 999;
+      position: relative;
+      color:#f6f8f8,;
+      text-align: center;
+    }
+
+    .header::after {
+      content: '';
+      position: absolute;
+      bottom: -50px; /* Ajuste conforme necessário */
+      left: 0;
+      width: 100%;
+      height: 100px; /* Ajuste conforme necessário */
+      background:#ffff; /* Cor da "barriga" */
+      border-radius: 10% / 100px; /* Ajuste conforme necessário */
+    }
+
+    .content {
+      padding: 20px;
+      text-align: center;
+      margin-top: 120px; /* Adiciona espaço para o cabeçalho */
+    }
+
+    h1 {
+      font-size: 3em;
+      margin-bottom: 0.5em;
+    }
+
+    p {
+      font-size: 1.5em;
+    }
+
+    .button {
+      padding: 10px 20px;
+      background: #FF416C;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1.2em;
+    }
+
+    .button:hover {
+      background: #FF4B2B;
+    }
+
+    .sticky-nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: #2db8e2;
+      z-index: 999;
+      display: none; /* Inicialmente oculto */
+    }
+   
+    
+  </style>
+</head>
+
+<body>
+
+  <header class="header" style="width: 100%;">
+    <div class="container-fluid pt-10 sticky-top">
+      <div class="d-flex header-content">
+        <h1 class="col-3 pr-2 mt-4 mx-4" style="color: rgb(252, 251, 252);">Flinkhost</h1>
+        <nav class="col-8 text-center mt-5 d-flex">
+          <div class="dropdown text-white">
+            <div class="select">
+              <span class="selected">Hosting</span>
+              <div class="caret"></div>
+            </div>
+            <ul class="menu">
+              <li class="align-items-center">
+                <a href="#" class="text-decoration-none text-white">
+                  Cloud Hosting
+                </a>
+              </li>
+
+              <li> <a href="#" class="text-decoration-none text-white">
+                  Web Hosting
+                </a>
+              </li>
+              <li><a href="#" class="text-decoration-none text-white">Free Hosting</a></li>
+
+              <li><a href="#" class="text-decoration-none text-white">Shared Hosting</a></li>
+              <li><a href="#" class="text-decoration-none text-white">Dedicated Hosting</a></li>
+              <li><a href="#" class="text-decoration-none text-white">WordPress Hosting</a></li>
+              <li><a href="#" class="text-decoration-none text-white">VTP</a></li>
+
+            </ul>
+          </div>
+
+          <a href="suport.html" class="text-decoration-none text-white mx-3">Website Builder</a>
+          <a href="suport.html" class="text-decoration-none text-white mx-3">Ferramentas</a>
+          <a href="suport.html" class="text-decoration-none text-white mx-3">Domains</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <div class="sticky-nav " style="width: 100%;">
+    <div class="container-fluid pt-10 sticky-top">
+      <div class="d-flex header-content">
+        <h1 class="col-3 pr-2 mt-4 mx-5" style="color: rgb(252, 251, 252);">Flinkhost</h1>
+        <nav class="col-8 text-center mt-5 d-flex">
+          <div class="dropdown text-white">
+            <div class="select">
+              <span class="selected">Hosting</span>
+              <div class="caret"></div>
+            </div>
+            <ul class="menu">
+              <li class="align-items-center">
+                <a href="#" class="text-decoration-none text-white">
+                  Cloud Hosting
+                </a>
+              </li>
+
+              <li> <a href="#" class="text-decoration-none text-white">
+                  Web Hosting
+                </a>
+              </li>
+              <li><a href="#" class="text-decoration-none text-white">Free Hosting</a></li>
+
+              <li><a href="#" class="text-decoration-none text-white">Shared Hosting</a></li>
+              <li><a href="#" class="text-decoration-none text-white">Dedicated Hosting</a></li>
+              <li><a href="#" class="text-decoration-none text-white">WordPress Hosting</a></li>
+              <li><a href="#" class="text-decoration-none text-white">VTP</a></li>
+
+            </ul>
+          </div>
+
+          <a href="/SITE/suport.html" class="text-decoration-none text-white mx-3">Website Builder</a>
+          <a href="/SITE/suport.html" class="text-decoration-none text-white mx-3">Ferramentas</a>
+          <a href="/SITE/suport.html" class="text-decoration-none text-white mx-3">Domains</a>
+        </nav>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" >
+    <div class="card pt-5 d-flex" style="width: 18rem; border:2px solid #0000;">
+      
+      <img src="img/hospedagem-de-site-melhor-1170x680.jpeg" class="card-img-top m"  alt="...">
+      <div class="card-body" style="color: #000; width: 400px;;">
+        <h5 class="card-title">Card</h5>
+        <p class="card-text">Um exemplo de texto de descrição curta do card. Você pode adicionar qualquer conteúdo
+          aqui.</p>
+        <a href="#" class="btn btn-primary">Botão</a>
+      </div>
+    </div>
+  </div>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, delectus, odio, consectetur saepe ex commodi obcaecati quaerat nemo natus perspiciatis nam necessitatibus neque eos repudiandae vitae odit! Nesciunt, facilis? Commodi.
+Dolores nam libero veritatis saepe, veniam voluptatibus laborum, tenetur quae maxime nihil odio nesciunt consequatur, perspiciatis officiis ab reprehenderit. Itaque facilis quo velit dolor debitis! Aut sequi temporibus exercitationem culpa!
+Amet magnam, non, nemo dolores labore aspernatur autem ex quisquam aperiam perferendis reiciendis, quibusdam ea sed consequuntur neque est. Laudantium vel quibusdam ratione sequi itaque vitae! Illum ab rerum molestiae!
+Culpa voluptate reprehenderit ipsum aspernatur amet ipsa dolore eos alias iusto ea, neque non dolor nulla minus quae tempore incidunt assumenda eaque sapiente inventore cum qui! Modi ex mollitia tenetur!
+Enim corporis dolores rem suscipit officia quidem dolorem sint corrupti reiciendis voluptates alias voluptatibus deserunt exercitationem quaerat est saepe soluta numquam nam quisquam similique consequatur voluptas dignissimos, fugit quae? Assumenda?
+Sapiente, debitis? Culpa, sint enim eveniet, minima voluptas qui sequi dolore debitis accusantium repellendus adipisci cumque rem earum consectetur ullam commodi vel! Autem asperiores labore natus eos reiciendis alias harum!
+Corrupti possimus adipisci enim nesciunt soluta voluptatibus assumenda natus error harum expedita veritatis vel unde fugit inventore molestiae quibusdam, fuga dolorem rem quae obcaecati! Facilis pariatur deserunt delectus quibusdam nostrum.
+Ratione repellat recusandae blanditiis placeat corporis maxime. Ratione sunt reiciendis maxime sit aspernatur fuga? Quo, dolor maiores, ipsum veniam eveniet aspernatur molestiae soluta ullam quidem, voluptatem odio autem enim delectus!
+Corrupti nemo voluptatum soluta facilis, iure ex repellendus eius rerum totam, voluptatem odio ab quos velit architecto alias quam laudantium! Aliquam quisquam nihil quis sint corporis officiis, hic nesciunt at.
+Deleniti sint incidunt aliquid, aspernatur vitae nihil qui sunt perferendis dicta reiciendis odit fugiat a assumenda atque adipisci sapiente officia architecto alias veritatis ipsam nemo laboriosam perspiciatis placeat. Repudiandae, possimus?
+  <script>
+    window.addEventListener('scroll', function () {
+      var heade = document.querySelector('.container');
+      var stickyNav = document.querySelector('.sticky-nav');
+
+      if (window.scrollY >= heade.offsetHeight) {
+        stickyNav.style.display = 'block';
+      } else {
+        stickyNav.style.display = 'none';
+      }
+    });
+  </script>
+<script src="/views/JS/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,86 @@
+/*ESTÁ É O CSS geral do site, aqui será onde eu aplicarei estilos geral para as páginas web.*/
+
+*{
+    margin:0px;
+    padding: 0;
+    width: 100%;
+}
+
+
+#div-db {
+  height: calc(100vh - 100px); /* Ajuste o valor conforme a altura do cabeçalho */
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  background-size: 100% 100%;
+}
+
+h4{
+  font-size: 14px;
+  
+}
+
+
+  
+
+
+.dropdown{
+  min-width:8em;
+position: relative;
+}
+.dropdown *{ 
+  box-sizing: border-box;
+}
+.select{
+  color:rgb(253, 253, 253);
+display: flex;
+justify-content: space-between;
+align-items: center;
+cursor: pointer;
+transition: background 0.3s;
+}
+
+
+.caret{
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 6px solid #fff;
+  transition: 0.3s;
+  margin-left: 3px;
+}
+.carect-rotate{
+  transform: rotate(180deg);
+}
+.menu{
+  list-style: none;
+  padding: 0.2em 0.5em;
+  background:rgb(132, 38, 226);
+  border: 1px ;
+  box-shadow: 0 0.5em 1em rbga(0,0,0,0.2);
+   border-radius: 0.5em;
+   color:#fff;
+   font-size: 16px;
+   position:absolute;
+   top: 3em;
+   left: 40%;
+   width: 25em;
+   transform: translateX(-50%);
+   opacity: 0;
+   display: none;
+   transition: 0.2s;
+   z-index: 1;
+}
+.menu li{
+  padding: 0.7em 0.5em;
+  margin: 0.2em 0;
+  border-radius: 0.5em;
+  cursor: pointer;
+}
+
+.menu-open{
+  display: block;
+  opacity: 1;
+}

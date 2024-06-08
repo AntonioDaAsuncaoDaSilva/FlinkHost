@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Docker Effect</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: white; /* Fundo branco geral */
+        }
+        .header {
+            background: linear-gradient(135deg, #4A00E0, #8E2DE2);
+            height: 60vh; /* Altura da seção */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            color: white;
+            text-align: center;
+        }
+        .header::after {
+            content: '';
+            position: absolute;
+            bottom: -50px; /* Ajuste conforme necessário */
+            left: 0;
+            width: 100%;
+            height: 100px; /* Ajuste conforme necessário */
+            background: white; /* Cor da "barriga" */
+            border-radius: 10% / 100px; /* Ajuste conforme necessário */
+        }
+        .content {
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            font-size: 3em;
+            margin-bottom: 0.5em;
+        }
+        p {
+            font-size: 1.5em;
+        }
+        .button {
+            padding: 10px 20px;
+            background: #FF416C;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.2em;
+        }
+        .button:hover {
+            background: #FF4B2B;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div>
+            <h1>Docker Builds: Now Lightning Fast</h1>
+            <p>Announcing Docker Build Cloud general availability</p>
+            <button class="button">Discover Docker Build Cloud</button>
+        </div>
+    </div>
+    <div class="content">
+        <!-- Conteúdo adicional da página -->
+        <p>Conteúdo da página aqui...</p>
+    </div>
+   <script src="ex.js"></script>
+
+</body>
+</html>
